@@ -1,16 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
-import store from './store';
+import store, {persistor} from './store/Store'
 import App from './App';
+
 
 ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
-  <App/>,
   document.getElementById('root')
 );
 

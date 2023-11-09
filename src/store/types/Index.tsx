@@ -41,7 +41,7 @@ error: string | null;
 data: T | null;
 }
 
-export interface UserState extends AsyncState<UserData> {}
+export interface UserState extends AsyncState<UserData['data']> {}
 
 export interface ApiState {
     user: UserState;

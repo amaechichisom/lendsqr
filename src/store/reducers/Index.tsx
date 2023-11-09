@@ -16,7 +16,7 @@ export const userSlice = createSlice({
 
         builder.addCase(getUser.fulfilled, (state, action) => {
             state.user.data = null;
-            state.user.data = action.payload;
+            state.user.data = action.payload.data;
             state.user.loading = false;
         })
 
